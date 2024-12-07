@@ -1,12 +1,12 @@
-// Set your event date and time (UTC or a fixed time zone)
-const targetDate = new Date("2025-01-01T00:00:00Z").getTime();
+
+const targetDate = new Date("2025-02-13T00:00:00Z").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
     if (distance < 0) {
-        // Countdown ended
+       
         document.getElementById("timer").innerHTML = "The truth is out there. Stay vigilant.";
         return;
     }
@@ -16,7 +16,7 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("timer").innerHTML = 
+    document.getElementById("timer").textContent = 
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
