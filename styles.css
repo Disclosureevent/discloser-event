@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #121212; /* cleaner, flat dark background */
+    background: #121212;
     color: #ffffff;
     height: 100%;
     width: 100%;
@@ -31,7 +31,34 @@ html, body {
 .timer {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
-    color: #00FFA0; /* subtle, cleaner accent color */
+    color: #00FFA0;
+    margin-bottom: 50px; /* Add some space before the contact section */
+}
+
+.contact-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.contact-section a {
+    color: #00FFA0;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
 }
 
 /* Simple Fade-in Animation */
